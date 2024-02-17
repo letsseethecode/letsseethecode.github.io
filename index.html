@@ -6,51 +6,111 @@
     <link rel="stylesheet" herf="./site.css" />
     <style>
         html {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             background-color: #111111;
-            color: #ffffff;
+            color: hsl(140, 15%, 65%);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: hsl(140, 25%, 85%);
         }
 
         a {
-            color: #00ff00;
+            color: hsl(140, 90%, 40%);
         }
 
-        #container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        #content__image {
-            width: 128px;
-            height: 128px;
+        .content__title {
+            text-align: center;
+            color: hsl(140, 90%, 40%);
+            margin-bottom: 40px;
+            text-shadow: 0px 0px 10px hsl(140, 90%, 40%);
+        }
+
+        .content__subtitle {
+            text-align: center;
+            color: hsl(140, 50%, 85%);
+            margin-bottom: 60px;
+        }
+
+        .content__image {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .content__twitch {
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
-        <h1 id="content__title">Under Construction</h1>
-        <img id="content__image" src="./images/lstc_logo.png" />
+    <div class="content">
+        <img class="content__image" src="./images/lstc_logo.png" />
+        <h1 class="content__title">letsseethecode.com</h1>
+        <h2 class="content__subtitle">Connect. Collaborate. Code.</h2>
+
+        <h3>"The Code is the Star."</h3>
 
         <p>
-            Come along to our meetup and help us build this site out. Learn
-            some practical skills from like minded techies.
+            A new hybrid on-line/in-person meetup where the code is the star.
+            See <strong>live demonstrations</strong> that people are working on,
+            join <strong>Interactive code-reviews</strong>, and discuss with
+            attendees as they showcase and explain the their code.
         </p>
 
         <p>
-            Check out our in-person events on
-            <a href="https://github.com/letsseethecode/events">github.com</a>
+            If you have something to show off, or a project you'd like input,
+            or are looking to hone your skills in code, then this is the place
+            to do that. All in a fun and supportive environment.
+        </p>
+
+        <h3>Why?</h3>
+
+        <p>Our motto is "Connect. Collaborate. Code."</p>
+
+        <p>
+            Meet people who are passionate about the same things you are.
+            Contribute to the multiple projects we're hosting, and see how
+            others solve problems.
         </p>
 
         <p>
-            or come watch us on as we start to build up to our first meetup.
+            Learn new skills. Hone existing ones. Help others. Code!
         </p>
+
+        <h3>How?</h3>
+
         <p>
-            <a href="https://twitch.tv/letsseethecode">
-                <img src="./images/twitch_PNG28.png" width="128" height="128" />
-            </a>
+            Check out our github repositories for information
+            <a href="https://github.com/letsseethecode">https://github.com/letsseethecode</a>
         </p>
+
+        <h3>When?</h3>
+        <ul>
+            <li>Weekly: Monday @ 6:30pm on <strong>Twitch</strong>
+                <img class="content__twitch" src="./images/twitch_PNG28.png" />
+                <a href="https://twitch.tv/letsseethecode">https://twitch.tv/letsseethecode</a>
+            </li>
+            <li>
+                Monthly: hybrid <strong>on-line AND in-person</strong> at
+                <a href="https://github.com/letsseethecode/events">The Canal House
+                    in Nottingham, UK</a>. Next hybrid event is Monday 18th March 2024.
+                (Free food and drink!)
+            </li>
+        </ul>
     </div>
 </body>
 
